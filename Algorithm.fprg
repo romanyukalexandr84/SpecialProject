@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-20 10:20:46 "/>
+        <attribute name="created" value="VXNlcjtVU0VSLdCf0Jo7MjAyMy0wMy0yMDsiMDk6NTU6MTcgIjs0MDc4"/>
+        <attribute name="edited" value="VXNlcjtVU0VSLdCf0Jo7MjAyMy0wMy0yMDsiMTA6MjA6NDYgIjsxOzQxNzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1088;&#1072;&#1079;&#1084;&#1077;&#1088;&#1085;&#1086;&#1089;&#1090;&#1100; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;&#1072;&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="array" type="String" array="True" size="n"/>
+            <call expression="FillArray(array)"/>
+            <output expression="&quot;&#1055;&#1077;&#1088;&#1074;&#1086;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1099;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;:&quot;" newline="True"/>
+            <call expression="PrintArray(array)"/>
+            <output expression="&quot;&#1053;&#1086;&#1074;&#1099;&#1081; &#1084;&#1072;&#1089;&#1089;&#1080;&#1074;:&quot;" newline="True"/>
+            <call expression="PrintArray(NewArray(array))"/>
+        </body>
+    </function>
+    <function name="FillArray" type="None" variable="">
+        <parameters>
+            <parameter name="mas" type="String" array="True"/>
+        </parameters>
+        <body/>
+    </function>
+    <function name="PrintArray" type="None" variable="">
+        <parameters>
+            <parameter name="mas" type="String" array="True"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>
