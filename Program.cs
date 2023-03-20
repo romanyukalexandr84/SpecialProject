@@ -1,25 +1,25 @@
-﻿void FillArray (string[] mas)
+﻿void FillArray(string[] mas)
 {
     for (int i = 0; i < mas.Length; i++)
     {
-        Console.WriteLine ($"Введите {i}-тый элемент массива");
+        Console.WriteLine($"Введите {i}-й элемент массива");
         mas[i] = Console.ReadLine();
     }
 }
- 
- void PrintArray (string[] mas)
+
+void PrintArray(string[] mas)
 {
     for (int i = 0; i < mas.Length; i++)
     {
         Console.Write(mas[i] + " ");
     }
-    Console.WriteLine ();
+    Console.WriteLine();
 }
 
-string[] NewArray (string[] mas)
+string[] NewArray(string[] mas)
 {
-int leng = 0;
-for (int i = 0; i < mas.Length; i++)
+    int leng = 0;
+    for (int i = 0; i < mas.Length; i++)
     {
         if (mas[i].Length <= 3)
         {
@@ -27,10 +27,10 @@ for (int i = 0; i < mas.Length; i++)
         }
     }
 
-string[] newArr = new string [leng];
-int j = 0;
+    string[] newArr = new string[leng];
+    int j = 0;
 
-for (int i = 0; i < mas.Length; i++)
+    for (int i = 0; i < mas.Length; i++)
     {
         if (mas[i].Length <= 3)
         {
@@ -38,20 +38,17 @@ for (int i = 0; i < mas.Length; i++)
             j++;
         }
     }
-return newArr;
+    return newArr;
 }
 
-
-
-Console.WriteLine ("Введите размерность массива");
+Console.WriteLine("Введите размерность массива");
 int n = Convert.ToInt32(Console.ReadLine());
 
-string [] array = new string[n];
-FillArray (array);
+string[] array = new string[n];
+FillArray(array);
 
-Console.WriteLine ("Первоначальный массив:");
-PrintArray (array);
-Console.WriteLine ();
+Console.WriteLine("Первоначальный массив:");
+PrintArray(array);
 
-PrintArray (NewArray (array));
-Console.WriteLine ();
+Console.WriteLine("Новый массив:");
+PrintArray(NewArray(array));
